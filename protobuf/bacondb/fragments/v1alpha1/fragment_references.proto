@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package bacondb.fragments.v1alpha1;
+
+message FragmentReferences {
+  map<string, bool> to = 1;
+  // read-only
+  map<string, bool> from = 2;
+}

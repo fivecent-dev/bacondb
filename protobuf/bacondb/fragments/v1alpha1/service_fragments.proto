@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package bacondb.fragments.v1alpha1;
+
+service Fragments {
+  rpc CreateFragment () returns ();
+}

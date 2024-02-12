@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package bacondb.fragments.v1alpha1;
+
+import "bacondb/fragments/v1alpha1/fragment_references.proto";
+
+message Fragment {
+  string name = 1;
+
+  string content = 2;
+
+  map<string, bool> labels = 3;
+  map<string, string> tags = 4;
+
+  bacondb.fragments.v1alpha1.FragmentReferences fragment_references = 5;
+}
